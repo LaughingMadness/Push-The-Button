@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dots N Boxes</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="indexdDBManiger.js"></script>
+    <script>
+        const button=new BigRedButton("qOut","frame","button");
+    </script>
+
+</head>
+<body>
+    <section class="styler" id="dom">
+        <h1>You Only Get One Life</h1>
+        <h3 style="margin: 0;">Record your words in the book and my thay save you.</h3>
+        <h4 style="margin: 0;">Push the button and discover the consequences.</h4>
+        
+        <textarea name="input" id="input" placeholder="What is said isent so esaly taken back." onblur="addNewQuote(button,'input')"></textarea>
+        <div id="frame"></div>
+        <br>
+        <div id="qOut">&nbsp;</div>
+        <script>
+            button.html("dom");
+        </script>
+    </section>
+</body>
+</html>
